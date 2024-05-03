@@ -1,0 +1,35 @@
+const input=require("readline-sync");
+let u = input.questionInt("enter the number");
+if(u<=50)
+{
+    B=u*0.50;
+    S=B*20/100;
+    T=B+S;
+    console.log(T)
+}
+else
+{
+    if(u<=150)
+    {
+        B=(u*0.50)+(u-50)*0.75;
+        S=B*20/100;
+        T=B+S;
+        console.log(T)
+    }
+    {
+        if(u<=250)
+        {
+            B=100+(u-150)*1.20;
+            S=B*20/100;
+            T=B+S;
+            console.log(T)
+        }
+        else
+        {
+            B=220+(u-250)*1.50;
+            S=B*20/100;
+            T=B+S;
+            console.log(T)
+        }
+    }
+}
